@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 
-export interface HobiItemProps {
+export interface HobbyItemProps {
     title: string;
     icon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
 }
 
-const HobiItem: FC<HobiItemProps> = ({ title, icon: Icon }) => {
+const HobbyItem: FC<HobbyItemProps> = ({ title, icon: Icon }) => {
     return (
         <div className="flex w-full flex-col items-center justify-center py-6  text-lg print:w-1/4 md:w-1/4">
             {Icon && <Icon className="mx-2 h-7 w-7" />}
@@ -16,4 +16,4 @@ const HobiItem: FC<HobiItemProps> = ({ title, icon: Icon }) => {
     );
 };
 
-export default HobiItem;
+export default HobbyItem;
