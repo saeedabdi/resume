@@ -1,17 +1,76 @@
 import { Fragment } from 'react';
-import ChromIcon from 'assets/svg/chrom.svg';
+import ChromoIcon from 'assets/svg/chrom.svg';
 import EducationIcon from 'assets/svg/education.svg';
 import MailIcon from 'assets/svg/mail.svg';
 import PhoneIcon from 'assets/svg/phone.svg';
 import ProfileIcon from 'assets/svg/profile.svg';
 import SkillIcon from 'assets/svg/skillIcon.svg';
 import WorkIcon from 'assets/svg/workIcon.svg';
-import { Card, HobiItem, SkillItem, WorkIExprienceItem } from 'components/pages/resume';
-import { WorkIExprienceItemProps } from 'components/pages/resume/workIExprienceItem';
+import { Card, HobbyItem, SkillItem, WorkIExperienceItem } from 'components/pages/resume';
+import { WorkIExperienceItemProps } from 'components/pages/resume/workIExperienceItem';
 import Head from 'next/head';
-import { hobies, Skills, WorkExprience } from 'statics/data';
+import { hobbies, Skills, WorkExperience } from 'statics/data';
 
 export default function Home() {
+    const technologies = [
+        'JavaScript',
+        'TypeScript',
+        'React',
+        'Next.js',
+        'Apollo',
+        'GraphQL',
+        'React Native',
+        'Node.js',
+        'Express',
+        'MongoDB',
+        'Redux',
+        'React-Redux',
+        'Redux-Thunk',
+        'Redux-Saga',
+        'Saga',
+        'Sass',
+        'Styled-Components',
+        'Material-UI',
+        'React-Router-Dom',
+    ];
+    const pesteProjects: { name: string; url: string }[] = [
+        {
+            name: 'Komodaa',
+            url: 'https://app.komodaa.com/',
+        },
+        {
+            name: 'Head start',
+            url: 'http://headstart.work/',
+        },
+        {
+            name: 'Link see',
+            url: 'https://linksee.me/',
+        },
+        {
+            name: 'Shahkelid',
+            url: 'https://shahkelid.foundation/',
+        },
+        {
+            name: 'Pofefilm',
+            url: 'https://pofefilm.com/',
+        },
+        {
+            name: 'Foolazh',
+            url: '',
+        },
+        {
+            name: 'Bonyad',
+            url: 'http://bonyadnews.ir/',
+        },
+        {
+            name: 'Helpiya',
+            url: 'https://helpiya.com/',
+        },
+        {
+            name: 'Panel',
+            url: 'https://panel.headstart.work/',
+        },
+    ];
     return (
         <>
             <Head>
@@ -22,7 +81,7 @@ export default function Home() {
                     <div className=" flex flex-col p-4 px-2 py-10 print:flex-row print:p-0 md:flex-row   md:p-3">
                         <div className=" flex w-full flex-col items-center justify-center p-4 pr-8 print:w-1/4  md:w-1/4 ">
                             <img
-                                className="overflow-hidden  bg-gray-300 print:w-4/6 md:w-4/6"
+                                className=" transform overflow-hidden bg-gray-300 object-center print:w-4/6 md:w-4/6"
                                 src="/saeed-abdi.jpg"
                                 alt="Saeed Abdi"
                             />
@@ -34,10 +93,16 @@ export default function Home() {
                             <Card title="profile" icon={<ProfileIcon className="mr-2 h-7 w-7" />}>
                                 <div>
                                     <h2 className="prose-lg flex w-full items-center px-2 py-10 text-lg text-gray-700 md:w-2/3">
-                                        Front End Developer focused on React & React Native with 3
-                                        years of experience in building and maintaining web
-                                        applications. Proficient in JavaScript, TypeScript, React;
-                                        plus few other related libraries.
+                                        Front End Developer focused on React & React Native in
+                                        building and maintaining web applications. Proficient in
+                                        JavaScript, TypeScript, React; plus few other related
+                                        libraries.
+                                        <br />
+                                        I’m honest and exact. So if you hire me, I can complete this
+                                        project in a short time as you want. I am available for now
+                                        and I can start working right now. I guarantee the best
+                                        quality of my working. I'd like to discuss more in detail
+                                        via chat. Best regards.
                                     </h2>
                                     <div className="grid w-full   grid-cols-1 items-center justify-center  gap-4  p-4 md:grid-cols-3">
                                         <a href="tel:+989022323244" className=" flex items-center">
@@ -55,8 +120,15 @@ export default function Home() {
                                             href="https://github.com/saeedabdi"
                                             className=" flex items-center"
                                         >
-                                            <ChromIcon className="mx-2 h-7 w-7" />
+                                            <ChromoIcon className="mx-2 h-7 w-7" />
                                             https://github.com/saeedabdi
+                                        </a>
+                                        <a
+                                            href="https://www.linkedin.com/in/saeed-abdi-256415197/"
+                                            className=" flex items-center"
+                                        >
+                                            <ChromoIcon fill="black" className="mx-2 h-8 w-8" />
+                                            https://www.linkedin.com/in/saeed-abdi-256415197/
                                         </a>
                                     </div>
                                 </div>
@@ -64,11 +136,20 @@ export default function Home() {
                         </div>
                     </div>
                     <Card icon={<WorkIcon className="mx-2 h-7 w-7" />} title="Work Experience">
-                        <WorkIExprienceItem
+                        {WorkExperience.map((w: WorkIExperienceItemProps, idx) => {
+                            return (
+                                <Fragment key={idx}>
+                                    <WorkIExperienceItem {...w} />
+                                </Fragment>
+                            );
+                        })}
+                        <WorkIExperienceItem
+                            technologies={technologies}
                             date="Jan 2020 - May 2021 · 1 yr 5 mos"
-                            location="Tehran - Iran"
+                            location="Amsterdam, Netherlands"
                             title="Front-end developer"
                             subTitle="Peste"
+                            projects={pesteProjects}
                         >
                             <div className="pb-10 ">
                                 <p className="mt-2.1 text-md mb-2 leading-normal text-gray-700">
@@ -97,14 +178,7 @@ export default function Home() {
                                     <li>Creating custom React.js components and hooks.</li>
                                 </ul>
                             </div>
-                        </WorkIExprienceItem>
-                        {WorkExprience.map((w: WorkIExprienceItemProps, idx) => {
-                            return (
-                                <Fragment key={idx}>
-                                    <WorkIExprienceItem {...w} />
-                                </Fragment>
-                            );
-                        })}
+                        </WorkIExperienceItem>
                     </Card>
                     <Card icon={<SkillIcon className="mx-2 h-7 w-7" />} title="Skils">
                         <div className="flex w-full flex-wrap">
@@ -119,10 +193,10 @@ export default function Home() {
                     </Card>
                     <Card icon={<ProfileIcon className="mx-2 h-7 w-7" />} title="Hobbies">
                         <div className="flex w-full flex-wrap">
-                            {hobies.map((hobi, idx) => {
+                            {hobbies.map((hobi, idx) => {
                                 return (
                                     <Fragment key={idx}>
-                                        <HobiItem {...hobi} />
+                                        <HobbyItem {...hobi} />
                                     </Fragment>
                                 );
                             })}
