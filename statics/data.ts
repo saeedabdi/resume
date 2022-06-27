@@ -19,8 +19,25 @@ interface WorkExperienceItemInterface {
 
 export const WorkExperience: WorkExperienceItemInterface[] = [
     {
+        title: 'Hasti Innovative Trading (HIT)',
+        date: 'May 2022 - Present',
+        location: 'Tehran , Iran',
+        subTitle: 'Front-end developer',
+        description:
+            'HIT is a subsidiary of Golrang Industrial Group active in the eCommerce Industry. We are committed to developing a platform that is dedicated to facilizing selling and buying products that empower people to do business as well as, creating a new intelligent marketplace.',
+        technologies: [
+            'React',
+            'Redux',
+            'Typescript',
+            'Next.js',
+            'MonoRepo',
+            'Material-UI',
+            'Styled-Components',
+        ],
+    },
+    {
         'title': 'Front-end developer',
-        'date': 'Sep 2021 - Present ·',
+        'date': 'Sep 2021 - May 2022 ·',
         'location': 'Dubai, United Arab Emirates',
         'subTitle': 'Dream Come True Information Technology',
         technologies: [
@@ -39,42 +56,6 @@ export const WorkExperience: WorkExperienceItemInterface[] = [
         ],
         'description':
             'Dream Come True has provided innovative ideas and income opportunities to live a life in balance.',
-    },
-    {
-        'title': 'Head of front-end development',
-        'date': 'Feb 2021 - Jul 2021 · 6 mos part-time',
-        'location': 'Tehran, Iran',
-        'subTitle': 'Cloudware',
-        technologies: [
-            'React',
-            'Redux',
-            'TypeScript',
-            'Next.js',
-            'React Router',
-            'Redux Saga',
-            'React Query',
-            'Tailwind CSS',
-        ],
-        projects: [
-            {
-                name: 'Pars toy',
-                url: 'http://parstoy.ir/',
-            },
-            {
-                name: 'kookbaz',
-                url: 'http://kookbaz.ir/',
-            },
-            {
-                name: 'ekaala',
-                url: 'https://ekaala.ir/',
-            },
-            {
-                name: 'bitbox',
-                url: 'http://bitboxclient.cloudbuilder.ir/',
-            },
-        ],
-        'description':
-            'The company specializes in outsourcing web applications to businesses. As a full-stack developer.',
     },
     {
         'title': 'Front-end developer',
@@ -117,6 +98,54 @@ export const WorkExperience: WorkExperienceItemInterface[] = [
         'description':
             'Idea Negar Sina Company was established in 2018 in the Internet industry / e-commerce / online services, medical services and health. In the field of consulting services in management and information technology .',
     },
+    {
+        'title': 'Head of front-end development',
+        'date': 'Feb 2021 - Jul 2021 · 6 mos part-time',
+        'location': 'Tehran, Iran',
+        'subTitle': 'Cloudware',
+        technologies: [
+            'React',
+            'Redux',
+            'TypeScript',
+            'Next.js',
+            'React Router',
+            'Redux Saga',
+            'React Query',
+            'Tailwind CSS',
+        ],
+        projects: [
+            {
+                name: 'Pars toy',
+                url: 'http://parstoy.ir/',
+            },
+            {
+                name: 'kookbaz',
+                url: 'http://kookbaz.ir/',
+            },
+            {
+                name: 'ekaala',
+                url: 'https://ekaala.ir/',
+            },
+            {
+                name: 'bitbox',
+                url: 'http://bitboxclient.cloudbuilder.ir/',
+            },
+        ],
+        'description':
+            'The company specializes in outsourcing web applications to businesses. As a full-stack developer.',
+    },
+    {
+        'title': 'FreeLancer',
+        'date': '-',
+        'location': 'Tehran, Iran',
+        'subTitle': 'Freelancer',
+        technologies: ['TypeOrm', 'Angular', 'Vue', 'NodeJS', 'Express', 'MongoDB', 'PostgreSQL'],
+        'description':
+            "I'm a freelancer who works on web development and design. ." +
+            "I've worked on several projects, including: " +
+            'E-commerce, ' +
+            'WordPress ',
+    },
 ];
 export const Skills: SkillItemProps[] = [
     {
@@ -136,6 +165,9 @@ export const Skills: SkillItemProps[] = [
     },
     {
         title: 'CSS/Tailwind',
+    },
+    {
+        title: 'Angular',
     },
     {
         title: 'Wordpress',

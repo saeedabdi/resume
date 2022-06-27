@@ -137,48 +137,62 @@ export default function Home() {
                     </div>
                     <Card icon={<WorkIcon className="mx-2 h-7 w-7" />} title="Work Experience">
                         {WorkExperience.map((w: WorkIExperienceItemProps, idx) => {
+                            if (idx === WorkExperience.length - 1) {
+                                return (
+                                    <>
+                                        <WorkIExperienceItem
+                                            technologies={technologies}
+                                            date="Jan 2020 - May 2021 · 1 yr 5 mos"
+                                            location="Amsterdam, Netherlands"
+                                            title="Front-end developer"
+                                            subTitle="Peste"
+                                            projects={pesteProjects}
+                                        >
+                                            <div className="pb-10 ">
+                                                <p className="mt-2.1 text-md mb-2 leading-normal text-gray-700">
+                                                    Peste is a development agency that helps out
+                                                    businesses with their outsourced web
+                                                    applications. As the Full-stack developer, my
+                                                    core activities included:
+                                                </p>
+                                                <ul className="list-disc pl-8">
+                                                    <li>
+                                                        Building stable and maintainable codebases
+                                                        using React and Next
+                                                    </li>
+                                                    <li>
+                                                        Contributing with backend team, designing
+                                                        database and structuring infrastructure
+                                                    </li>
+                                                    <li>
+                                                        Developing front-end for 5+ websites and web
+                                                        apps, using React.js, Next.js, Redux, and
+                                                        Apollo.
+                                                    </li>
+                                                    <li>
+                                                        Using skills in debugging to check code,
+                                                        improve code and enhance the functionality
+                                                        and user experience of web applications
+                                                    </li>
+                                                    <li>
+                                                        Creating custom React.js components and
+                                                        hooks.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </WorkIExperienceItem>
+                                        <Fragment key={idx}>
+                                            <WorkIExperienceItem {...w} />
+                                        </Fragment>
+                                    </>
+                                );
+                            }
                             return (
                                 <Fragment key={idx}>
                                     <WorkIExperienceItem {...w} />
                                 </Fragment>
                             );
                         })}
-                        <WorkIExperienceItem
-                            technologies={technologies}
-                            date="Jan 2020 - May 2021 · 1 yr 5 mos"
-                            location="Amsterdam, Netherlands"
-                            title="Front-end developer"
-                            subTitle="Peste"
-                            projects={pesteProjects}
-                        >
-                            <div className="pb-10 ">
-                                <p className="mt-2.1 text-md mb-2 leading-normal text-gray-700">
-                                    Peste is a development agency that helps out businesses with
-                                    their outsourced web applications. As the Full-stack developer,
-                                    my core activities included:
-                                </p>
-                                <ul className="list-disc pl-8">
-                                    <li>
-                                        Building stable and maintainable codebases using React and
-                                        Next
-                                    </li>
-                                    <li>
-                                        Contributing with backend team, designing database and
-                                        structuring infrastructure
-                                    </li>
-                                    <li>
-                                        Developing front-end for 5+ websites and web apps, using
-                                        React.js, Next.js, Redux, and Apollo.
-                                    </li>
-                                    <li>
-                                        Using skills in debugging to check code, improve code and
-                                        enhance the functionality and user experience of web
-                                        applications
-                                    </li>
-                                    <li>Creating custom React.js components and hooks.</li>
-                                </ul>
-                            </div>
-                        </WorkIExperienceItem>
                     </Card>
                     <Card icon={<SkillIcon className="mx-2 h-7 w-7" />} title="Skils">
                         <div className="flex w-full flex-wrap">
