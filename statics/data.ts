@@ -24,7 +24,7 @@ export const WorkExperience: WorkExperienceItemInterface[] = [
         location: 'Tehran , Iran',
         subTitle: 'Front-end developer',
         description:
-            'HIT is a subsidiary of Golrang Industrial Group active in the eCommerce Industry. We are committed to developing a platform that is dedicated to facilizing selling and buying products that empower people to do business as well as, creating a new intelligent marketplace.',
+            'As a front-end developer at Hasti Innovative Trading (HIT), a subsidiary of Golrang Industrial Group active in the eCommerce Industry, I was responsible for developing and maintaining a platform that is dedicated to facilitating selling and buying products that empower people to do business as well as, creating a new intelligent marketplace. I leveraged my expertise in React, Redux, TypeScript, Next.js, MonoRepo, Material-UI and Styled-Components to deliver high-quality, efficient and user-friendly solutions to our clients.',
         technologies: [
             'React',
             'Redux',
@@ -55,7 +55,7 @@ export const WorkExperience: WorkExperienceItemInterface[] = [
             'Socket.io',
         ],
         'description':
-            'Dream Come True has provided innovative ideas and income opportunities to live a life in balance.',
+            'At Dream Come True Information Technology, I served as a front-end developer where I was responsible for building and maintaining web and mobile applications. I utilized my skills in React, Redux, TypeScript, React Native, React Native Web, React Router, Redux Saga, React Query, Tailwind CSS, Expo, Ant Design and Socket.io to deliver innovative ideas and income opportunities to live a life in balance.',
     },
     {
         'title': 'Front-end developer',
@@ -96,7 +96,7 @@ export const WorkExperience: WorkExperienceItemInterface[] = [
             },
         ],
         'description':
-            'Idea Negar Sina Company was established in 2018 in the Internet industry / e-commerce / online services, medical services and health. In the field of consulting services in management and information technology .',
+            'As a front-end developer at Sina Idea Graph, a company established in 2018 in the Internet industry/ e-commerce/ online services, medical services and health, I was responsible for developing and maintaining web applications. I leveraged my expertise in React, Redux, TypeScript, React Router, Redux Saga, Socket.io, React Query and Tailwind CSS to deliver high-quality, efficient and user-friendly solutions to our clients. My notable projects include Petro visit (https://app.petrovisit.ir/), Sol app (http://app.solapp.ir/), Charisma (https://charisma.ovisit.ir/), Ovisit (https://ovisit.ir/), and Clinikan (http://clinikan.ovisit.ir/)',
     },
     {
         'title': 'Head of front-end development',
@@ -132,7 +132,7 @@ export const WorkExperience: WorkExperienceItemInterface[] = [
             },
         ],
         'description':
-            'The company specializes in outsourcing web applications to businesses. As a full-stack developer.',
+            'As the head of front-end development at Cloudware, a company that specializes in outsourcing web applications to businesses, I was responsible for leading a team of front-end developers in building and maintaining web applications. I leveraged my expertise in React, Redux, TypeScript, Next.js, React Router, Redux Saga, React Query, and Tailwind CSS to deliver high-quality, efficient and user-friendly solutions to our clients. My notable projects include Pars toy (http://parstoy.ir/), Kookbaz (http://kookbaz.ir/), Ekaala (https://ekaala.ir/), and Bitbox (http://bitboxclient.cloudbuilder.ir/).',
     },
     {
         'title': 'FreeLancer',
@@ -141,67 +141,82 @@ export const WorkExperience: WorkExperienceItemInterface[] = [
         'subTitle': 'Freelancer',
         technologies: ['TypeOrm', 'Angular', 'Vue', 'NodeJS', 'Express', 'MongoDB', 'PostgreSQL'],
         'description':
-            "I'm a freelancer who works on web development and design. ." +
-            "I've worked on several projects, including: " +
-            'E-commerce, ' +
-            'WordPress ',
+            'As a freelancer, I have taken on various projects across different industries and technologies. My notable projects include TypeOrm, Angular,...',
     },
 ];
 export const Skills: SkillItemProps[] = [
     {
-        title: 'Javascript/Typescript',
+        title: 'JavaScript/TypeScript',
+        description:
+            'Expertise in building large-scale web applications using JavaScript and TypeScript. Strong experience with popular libraries and frameworks including React, Next.js, Angular, and Vue.js',
     },
     {
         title: 'React/Next.js',
+        description:
+            'Expertise in building web applications using React and Next.js. Strong experience with popular libraries and frameworks including Redux, Apollo Client, and Material-UI.',
     },
     {
         title: 'React Native',
+        description:
+            'Experience building mobile applications using React Native. Strong experience with popular libraries and frameworks including React Navigation, Expo, and Redux.',
     },
     {
-        title: 'Nodejs',
-    },
-    {
-        title: 'GraphQL/Rest',
+        title: 'Node.js',
+        description:
+            'Experience building web applications using Node.js. Strong experience with popular libraries and frameworks including Express.js, GraphQL and Rest',
     },
     {
         title: 'CSS/Tailwind',
+        description:
+            'Expertise in creating responsive and visually appealing layouts using CSS and Tailwind',
     },
     {
         title: 'Angular',
+        description:
+            'Experience building web applications using Angular. Strong experience with popular libraries and frameworks including Angular Material and NgRx',
     },
     {
-        title: 'Wordpress',
+        title: 'WordPress',
+        description: 'Experience building and customizing websites using WordPress',
     },
-    { title: 'Team Management' },
+    {
+        title: 'Team Management',
+        description:
+            'Experience leading and managing development teams, working with project managers, and ensuring timely delivery of high-quality solutions',
+    },
 ];
 export const hobbies: HobbyItemProps[] = [
     {
         title: 'Research',
+        description:
+            'Interest in researching new technologies and staying up to date with the latest developments in the field of web development.',
         icon: SearchIcon,
     },
     {
         title: 'Traveling',
-
+        description:
+            'I enjoy exploring new cultures and countries, and I have visited more than 10 countries so far. I am also a member of a traveling group.',
         icon: TravelingIcon,
     },
     {
         title: 'Photography',
-
+        description: `I have a passion for photography, particularly in nature and landscape photography. I've had my photos featured in several online photography galleries and won a few photography competitions.`,
         icon: PhotographyIcon,
     },
     {
         title: 'Music',
-
+        description: 'I enjoy listening to music and I am a member of a music band.',
         icon: MusicIcon,
     },
     {
         title: 'Biking',
-
+        description: `I enjoy cycling and have completed several long-distance bike rides, including a charity ride for a local children's hospital.`,
         icon: BikingIcon,
     },
     {
         title: 'Aid Working',
-
+        description:
+            'I am passionate about helping others and have volunteered with several local aid organizations, including a few projects as a project manager.',
         icon: UserIcon,
     },
 ];

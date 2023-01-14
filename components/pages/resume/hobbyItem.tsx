@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 
 export interface HobbyItemProps {
     title: string;
+    description?: string;
     icon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
 }
 
