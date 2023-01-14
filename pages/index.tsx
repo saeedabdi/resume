@@ -93,16 +93,15 @@ export default function Home() {
                             <Card title="profile" icon={<ProfileIcon className="mr-2 h-7 w-7" />}>
                                 <div>
                                     <h2 className="prose-lg flex w-full items-center px-2 py-10 text-lg text-gray-700 md:w-2/3">
-                                        Front End Developer focused on React & React Native in
-                                        building and maintaining web applications. Proficient in
-                                        JavaScript, TypeScript, React; plus few other related
-                                        libraries.
-                                        <br />
-                                        I’m honest and exact. So if you hire me, I can complete this
-                                        project in a short time as you want. I am available for now
-                                        and I can start working right now. I guarantee the best
-                                        quality of my working. I'd like to discuss more in detail
-                                        via chat. Best regards.
+                                        As a Front-end developer with over 3 years of experience
+                                        building and maintaining web applications using React and
+                                        React Native. I have a strong understanding of JavaScript,
+                                        TypeScript, and related libraries. I have a proven track
+                                        record of delivering high-quality and efficient solutions on
+                                        time. I am available for an interview at your convenience,
+                                        and I am excited about the opportunity to bring my skills
+                                        and experience to your team to help deliver successful
+                                        projects
                                     </h2>
                                     <div className="grid w-full   grid-cols-1 items-center justify-center  gap-4  p-4 md:grid-cols-3">
                                         <a href="tel:+989022323244" className=" flex items-center">
@@ -137,48 +136,50 @@ export default function Home() {
                     </div>
                     <Card icon={<WorkIcon className="mx-2 h-7 w-7" />} title="Work Experience">
                         {WorkExperience.map((w: WorkIExperienceItemProps, idx) => {
+                            if (idx === WorkExperience.length - 1) {
+                                return (
+                                    <>
+                                        <WorkIExperienceItem
+                                            technologies={technologies}
+                                            date="Jan 2020 - May 2021 · 1 yr 5 mos"
+                                            location="Amsterdam, Netherlands"
+                                            title="Front-end developer"
+                                            subTitle="Peste"
+                                            projects={pesteProjects}
+                                        >
+                                            <div className="pb-10 ">
+                                                During my tenure at Peste, a development agency that
+                                                specializes in building outsourced web applications,
+                                                I served as a full-stack developer. My primary
+                                                responsibilities included designing and implementing
+                                                robust and maintainable codebases using React and
+                                                Next. I collaborated closely with the backend team
+                                                to design databases, structure infrastructure and
+                                                ensure seamless integration. I also developed
+                                                front-end for 5+ websites and web apps, utilizing
+                                                technologies such as React.js, Next.js, Redux, and
+                                                Apollo. I was also responsible for debugging and
+                                                testing to ensure optimal performance and user
+                                                experience. I was able to create custom React.js
+                                                components and hooks, which helped us to deliver
+                                                high-quality, efficient and user-friendly solutions
+                                                to our clients. I am proud of the work I did at
+                                                Peste and the impact I had on delivering successful
+                                                projects.
+                                            </div>
+                                        </WorkIExperienceItem>
+                                        <Fragment key={idx}>
+                                            <WorkIExperienceItem {...w} />
+                                        </Fragment>
+                                    </>
+                                );
+                            }
                             return (
                                 <Fragment key={idx}>
                                     <WorkIExperienceItem {...w} />
                                 </Fragment>
                             );
                         })}
-                        <WorkIExperienceItem
-                            technologies={technologies}
-                            date="Jan 2020 - May 2021 · 1 yr 5 mos"
-                            location="Amsterdam, Netherlands"
-                            title="Front-end developer"
-                            subTitle="Peste"
-                            projects={pesteProjects}
-                        >
-                            <div className="pb-10 ">
-                                <p className="mt-2.1 text-md mb-2 leading-normal text-gray-700">
-                                    Peste is a development agency that helps out businesses with
-                                    their outsourced web applications. As the Full-stack developer,
-                                    my core activities included:
-                                </p>
-                                <ul className="list-disc pl-8">
-                                    <li>
-                                        Building stable and maintainable codebases using React and
-                                        Next
-                                    </li>
-                                    <li>
-                                        Contributing with backend team, designing database and
-                                        structuring infrastructure
-                                    </li>
-                                    <li>
-                                        Developing front-end for 5+ websites and web apps, using
-                                        React.js, Next.js, Redux, and Apollo.
-                                    </li>
-                                    <li>
-                                        Using skills in debugging to check code, improve code and
-                                        enhance the functionality and user experience of web
-                                        applications
-                                    </li>
-                                    <li>Creating custom React.js components and hooks.</li>
-                                </ul>
-                            </div>
-                        </WorkIExperienceItem>
                     </Card>
                     <Card icon={<SkillIcon className="mx-2 h-7 w-7" />} title="Skils">
                         <div className="flex w-full flex-wrap">
