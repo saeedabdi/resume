@@ -19,10 +19,10 @@ interface WorkExperienceItemInterface {
 
 export const WorkExperience: WorkExperienceItemInterface[] = [
     {
-        title: 'Hasti Innovative Trading (HIT)',
+        title: 'Front-end developer',
         date: 'May 2022 - Present',
         location: 'Tehran , Iran',
-        subTitle: 'Front-end developer',
+        subTitle: 'Hasti Innovative Trading (HIT)',
         description:
             'As a front-end developer at Hasti Innovative Trading (HIT), a subsidiary of Golrang Industrial Group active in the eCommerce Industry, I was responsible for developing and maintaining a platform that is dedicated to facilitating selling and buying products that empower people to do business as well as, creating a new intelligent marketplace. I leveraged my expertise in React, Redux, TypeScript, Next.js, MonoRepo, Material-UI and Styled-Components to deliver high-quality, efficient and user-friendly solutions to our clients.',
         technologies: [
