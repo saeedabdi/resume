@@ -93,7 +93,7 @@ export default function Home() {
                             <Card title="profile" icon={<ProfileIcon className="mr-2 h-7 w-7" />}>
                                 <div>
                                     <h2 className="prose-lg flex w-full items-center px-2 py-10 text-lg text-gray-700 md:w-2/3">
-                                        As a Front-end developer with over 3 years of experience
+                                        As a Front-end developer with over 4 years of experience
                                         building and maintaining web applications using React and
                                         React Native. I have a strong understanding of JavaScript,
                                         TypeScript, and related libraries. I have a proven track
@@ -148,24 +148,14 @@ export default function Home() {
                                             projects={pesteProjects}
                                         >
                                             <div className="pb-10 ">
-                                                During my tenure at Peste, a development agency that
-                                                specializes in building outsourced web applications,
-                                                I served as a full-stack developer. My primary
-                                                responsibilities included designing and implementing
-                                                robust and maintainable codebases using React and
-                                                Next. I collaborated closely with the backend team
-                                                to design databases, structure infrastructure and
-                                                ensure seamless integration. I also developed
-                                                front-end for 5+ websites and web apps, utilizing
-                                                technologies such as React.js, Next.js, Redux, and
-                                                Apollo. I was also responsible for debugging and
-                                                testing to ensure optimal performance and user
-                                                experience. I was able to create custom React.js
-                                                components and hooks, which helped us to deliver
-                                                high-quality, efficient and user-friendly solutions
-                                                to our clients. I am proud of the work I did at
-                                                Peste and the impact I had on delivering successful
-                                                projects.
+                                                I was a full-stack developer at Peste, a web
+                                                development agency, where I designed and implemented
+                                                code using React and Next for web applications. I
+                                                collaborated with the backend team, developed
+                                                front-end for multiple websites and apps, tested and
+                                                debugged the code, and created custom React.js
+                                                components and hooks for efficient and user-friendly
+                                                solutions.
                                             </div>
                                         </WorkIExperienceItem>
                                         <Fragment key={idx}>
